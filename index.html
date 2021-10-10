@@ -1,0 +1,96 @@
+<html>
+ 
+
+<head>
+    <title>Atividade Extra</title>
+    <h1>Formulario</h1>
+
+    <script type=”text/javascript”>
+      
+      function validarCampos() {
+       
+       var nome = document.dados.nome.value;
+       var endereco = document.dados.endereco.value;
+       var cidade = document.dados.cidade.value;
+       var cep = document.dados.cep.value;
+       var uf = document.dados.uf.value;
+       var data = document.data.value;
+
+      if ((nome == null) || (nome == ‘’)){
+       alert(‘O campo nome é obrigatório!’);
+      }
+      if ((Endereco == null) || (endereco == ‘’)){
+       alert(‘O campo endereco é obrigatório!’);
+      }
+      if ((cidade == null) || (cidade == ‘’)){
+        alert(‘O campo cidade é obrigatório!’);
+       }
+       if ((cep == null) || (cep == ‘’)){
+        alert(‘O campo cep é obrigatório!’);
+       }
+       if ((uf == null) || (uf == ‘’)){
+        alert(‘O campo uf é obrigatório!’);
+       }
+       if ((data == null) || (data == ‘’)){
+        alert(‘O campo data é obrigatório!’);
+       }
+      }
+       </script>
+  </head>
+  <body>
+    <form name= "dados" method="post">
+      <input type="text" name="nome" placeholder="Digite seu Nome" />
+    </form>
+    <script type=”text/javascript”>
+      // dados é o nome do form
+      var nome = document.dados.nome.value;
+      alert(nome);
+     </script>
+    <form name= "dados" method="post">
+      <input type="text" name="endereco" placeholder="Digite seu Endereco" />
+    </form>
+    <script type=”text/javascript”>
+      // dados é o enedereco do form
+      var endereco = document.dados.endereco.value;
+      alert(endereco);
+     </script>
+    <form name= "dados" method="post">
+      <input type="text" name="cidade" placeholder="Digite sua Cidade" />
+    </form>
+    <script type=”text/javascript”>
+      // dados é o cidade do form
+      var cidade = document.dados.cidade.value;
+      alert(cidade);
+     </script>
+    <form name= "dados" method="post">
+      <input type="text" name="cep" placeholder="Digite seu Cep" />
+    </form>
+    <script type=”text/javascript”>
+      // dados é o cep do form
+      var cep = document.dados.cep.value;
+      alert(cep);
+     </script>
+    <form name= "dados" method="post">
+      <input type="text" name="uf" placeholder="Digite seu Uf" />
+    </form>
+    <script type=”text/javascript”>
+      // dados é o uf do form
+      var uf = document.dados.uf.value;
+      alert(uf);
+     </script>
+    <form name= "dados" method="post">
+        <input    type="date"       name="data"
+         
+        />
+        <script type=”text/javascript”>
+          // dados é o date do form
+          var data = document.dados.data.value;
+          alert(data);
+         </script>
+    </form>
+    <form name= "dados" method="post">
+      <input type="button" name="enviar" 
+      onclick="validarCampos();" />
+    </form>
+  </body>
+</html>
